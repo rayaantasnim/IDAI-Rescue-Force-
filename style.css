@@ -1,0 +1,233 @@
+/* Global Body with Animated Background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, 
+    #0077b6,   /* deep blue */
+    #009688,   /* teal */
+    #FFD700,   /* gold */
+    #f72585,   /* pink */
+    #7209b7,   /* purple */
+    #3a0ca3,   /* indigo */
+    #4361ee,   /* sky blue */
+    #4cc9f0    /* aqua */
+  );
+  background-size: 1600% 1600%;
+  animation: gradientMove 30s ease infinite;
+  color: #111; /* dark text for contrast */
+  scroll-behavior: smooth;
+}
+
+/* Gradient Animation Keyframes */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* General Paragraphs */
+p {
+  text-align: justify;
+  margin: 0 20px 20px 20px;
+}
+
+/* Vision Section */
+.vision {
+  background: rgba(255,255,255,0.85);
+  border-left: 6px solid #0077b6;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 1000px;
+  font-family: "Georgia", serif;
+  color: #111;
+  border-radius: 10px;
+}
+
+.vision h3 {
+  font-size: 1.6em;
+  color: #0077b6;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.vision p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Mission Section */
+.mission {
+  background: rgba(255,255,255,0.85);
+  border-left: 6px solid #009688;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 1000px;
+  font-family: "Georgia", serif;
+  color: #111;
+  border-radius: 10px;
+}
+
+.mission h3 {
+  font-size: 1.6em;
+  color: #009688;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mission p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Section Styling */
+.section {
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 14px;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  border: 1px solid rgba(0,0,0,0.05);
+  margin: 40px auto;
+  max-width: 1100px;
+  color: #111;
+}
+
+.section:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+  border-color: #0077b6;
+}
+
+/* Para Box */
+.para {
+  width: auto;
+  text-align: justify;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1.5px solid #0077b6;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  background: rgba(255,255,255,0.85);
+  max-width: 950px;
+  color: #111;
+}
+
+/* Images */
+img {
+  width: 60%;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  border: 3px solid #009688;
+  margin: 20px auto;
+  display: block;
+}
+
+img:hover {
+  opacity: 0.95;
+  transform: scale(1.05);
+  border-color: #FFD700;
+  box-shadow: 0 0 12px #0077b6;
+}
+
+img:active {
+  transform: scale(0.95);
+}
+
+/* Headings */
+h1 {
+  font-size: 42px;
+  color: black;
+  background: whitesmoke;
+  width: auto;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px #FFD700;
+}
+
+h2 {
+  font-size: 32px;
+  color: #111;
+  background-color: rgba(255,255,255,0.8);
+  margin: 25px auto;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px;
+  max-width: 900px;
+}
+
+h3 {
+  font-size: 28px;
+  color: #009688;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 24px;
+  color: #FFD700;
+}
+
+h6 {
+  font-size: 30px;
+  background-color: #cce5ff;
+  color: #111;
+  text-align: center;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+h6:hover {
+  background-color: #0077b6;
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #0077b6, #009688);
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  border-top: 3px solid #FFD700;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  body {
+    margin: 0 10px !important;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .section {
+    margin: 20px auto;
+    padding: 20px;
+    width: auto;
+  }
+
+  .para {
+    margin: 15px auto;
+    padding: 15px;
+  }
+}
