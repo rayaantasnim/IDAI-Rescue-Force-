@@ -216,14 +216,32 @@ footer {
     margin: 0 10px !important;
   }
 
+  p{
+    padding:5px !important;
+    margin:3px !important;
+  }
+
+  .vision, .mission{
+    padding: 3px;
+  }
+
   img {
     width: 90%;
   }
 
   .section {
-    margin: 20px auto;
-    padding: 20px;
+    margin-left:3px !important;
+    margin-right:3px !important;
+    padding: 4px;
     width: auto;
+
+    .section{
+      padding:2.5px !important;
+      margin:1px;
+      img{
+        width: 99%;
+      }
+    }
   }
 
   .para {
