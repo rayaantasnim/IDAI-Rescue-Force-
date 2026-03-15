@@ -210,6 +210,10 @@ footer {
   margin-top: 40px;
 }
 
+p{
+  font-family: Vrinda !important;
+}
+
 /* Responsive Design */
 @media (max-width: 1100px) {
   body {
@@ -236,6 +240,7 @@ footer {
     width: auto;
 
     .section{
+      margin-bottom: 20px !important;
       padding:2.5px !important;
       margin:1px;
       img{
